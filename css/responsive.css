@@ -1,0 +1,40 @@
+@media (max-width: 1180px) {
+  :root { --sidebar: 210px; }
+  .board { grid-template-columns: repeat(5, minmax(200px, 1fr)); }
+  .content { padding: 22px 18px 32px; }
+}
+
+@media (max-width: 850px) {
+  .sidebar { width: 66px; flex-basis: 66px; padding: 14px 8px; }
+  .sidebar-brand { justify-content: center; padding: 4px 0 20px; }
+  .sidebar-brand > div:last-child, .nav-item:not(.active) span + *,
+  .nav-item { font-size: 0; justify-content: center; }
+  .nav-item span { font-size: 14px; }
+  .project-item, .sidebar-section-title span:first-child, .team-mini span:not(.avatar),
+  .mode-card div, .logout-button { display: none; }
+  .sidebar-section-title { justify-content: center; padding-left: 0; padding-right: 0; }
+  .team-mini { justify-content: center; padding: 6px 0; }
+  .mode-card { justify-content: center; }
+  .topbar { padding: 0 16px; }
+  .breadcrumbs span, .breadcrumbs b { display: none; }
+  .save-status { display: none; }
+}
+
+@media (max-width: 640px) {
+  .login-card { padding: 22px; }
+  .page-header { align-items: start; flex-direction: column; }
+  .header-actions { width: 100%; }
+  .header-actions button { flex: 1; }
+  .summary-strip { grid-template-columns: 1fr 1fr; }
+  .form-grid { grid-template-columns: 1fr; }
+  .filter-panel { flex-wrap: wrap; }
+  .filter-group { width: calc(50% - 6px); }
+  .board { grid-template-columns: repeat(5, minmax(245px, 1fr)); }
+  .content { padding: 18px 12px 28px; }
+  .topbar { height: 52px; }
+}
+
+@media(max-width:1100px){.header-actions{flex-wrap:wrap;justify-content:flex-end}.search-wrap{width:190px}}@media(max-width:720px){.search-wrap{width:100%;order:-1}.header-actions{width:100%}.header-actions>button{flex:1}.detail-grid{grid-template-columns:1fr}.detail-grid>div{border-right:0}.detail-grid>div:nth-last-child(-n+2){border-bottom:1px solid var(--line)}.detail-grid>div:last-child{border-bottom:0}}
+
+@media(max-width:900px){.header-actions{width:100%;flex-wrap:wrap}.search-wrap{flex:1}.page-header{align-items:flex-start}}
+@media(max-width:640px){.summary-strip{grid-template-columns:1fr 1fr}.work-row{grid-template-columns:8px minmax(0,1fr) auto}.work-row .due-date{display:none}.filter-panel .filter-group{width:100%}.theme-toggle{display:none}}
